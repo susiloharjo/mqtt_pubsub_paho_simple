@@ -19,10 +19,10 @@ def on_message(client, userdata, message):
  
 Connected = False   #global variable for the state of the connection
  
-broker_address= "app.iot.mkncorp.com"  #Broker address
+broker_address= ""  #Broker address
 port = 1883                         #Broker port
-user = "lora"                    #Connection username
-password = "user.1001"            #Connection password
+user = ""                    #Connection username
+password = ""            #Connection password
  
 client = mqttClient.Client("Python")               #create new instance
 client.username_pw_set(user, password=password)    #set username and password
